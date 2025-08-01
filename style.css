@@ -1,0 +1,23 @@
+/** Index html ajust the image to mobile view */
+@media screen and (max-width: 767.98px) {
+    .img-mobile {
+        max-width: 250px;
+        border-radius: 10px;
+    }
+}
+
+
+/** Index html items on recomendation list (animation)*/
+.iteractive-list {
+    position: relative;
+    animation: slideDownAppear 1s ease forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+@keyframes slideDownAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
