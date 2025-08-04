@@ -8,16 +8,27 @@
 
 
 /** Index html items on recomendation list (animation)*/
-.iteractive-list {
+.animation-upper-1 {
     position: relative;
     animation: slideDownAppear 1s ease forwards;
     opacity: 0;
     transform: translateY(-20px);
 }
 
+
 @keyframes slideDownAppear {
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/** Ozone html elevate a area effect */
+.elevate-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elevate-hover:hover {
+    transform: translateY(-8px);
 }
